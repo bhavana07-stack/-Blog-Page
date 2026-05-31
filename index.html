@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insight Blog</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="hero">
+        <h1>Insight Blog</h1>
+        <p>Discover Ideas, Technology & Innovation</p>
+    </header>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+
+        <div class="section-title">
+            <h2>Latest Blog Posts</h2>
+            <p>Explore articles on technology, web development, and education.</p>
+        </div>
+
+        <div class="blog-container">
+
+            <!-- Blog Post 1 -->
+            <article class="blog-card">
+
+                <span class="category">Technology</span>
+
+                <h3>The Future of Electric Vehicles</h3>
+
+                <div class="meta">
+                    <span>👤 John Smith</span>
+                    <span>📅 May 20, 2026</span>
+                </div>
+
+                <p>
+                    Electric vehicles are transforming transportation by reducing
+                    emissions and improving energy efficiency.
+                </p>
+
+                <div class="more-content">
+                    <p>
+                        EVs offer a cleaner alternative to traditional fuel-powered
+                        vehicles. Advances in battery technology are increasing
+                        driving range while reducing charging time.
+                    </p>
+
+                    <p>
+                        Governments around the world are investing heavily in
+                        charging infrastructure and incentives to encourage the
+                        adoption of electric mobility.
+                    </p>
+
+                    <p>
+                        Experts predict that EVs will play a major role in reducing
+                        environmental pollution and supporting a sustainable future.
+                    </p>
+                </div>
+
+                <button class="read-more-btn">Read More</button>
+
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-card">
+
+                <span class="category">Web Development</span>
+
+                <h3>Top Web Development Trends in 2026</h3>
+
+                <div class="meta">
+                    <span>👤 Sarah Johnson</span>
+                    <span>📅 May 25, 2026</span>
+                </div>
+
+                <p>
+                    Modern websites are becoming faster, smarter, and more
+                    responsive across all devices.
+                </p>
+
+                <div class="more-content">
+                    <p>
+                        Artificial Intelligence is helping developers automate
+                        repetitive coding tasks and improve user experiences.
+                    </p>
+
+                    <p>
+                        Progressive Web Apps (PWAs), accessibility standards,
+                        and cybersecurity practices are shaping the future of
+                        web development.
+                    </p>
+
+                    <p>
+                        Businesses are investing in responsive design to ensure
+                        seamless experiences for desktop, tablet, and mobile users.
+                    </p>
+                </div>
+
+                <button class="read-more-btn">Read More</button>
+
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-card">
+
+                <span class="category">Education</span>
+
+                <h3>Why Learning Programming Matters</h3>
+
+                <div class="meta">
+                    <span>👤 Michael Brown</span>
+                    <span>📅 May 28, 2026</span>
+                </div>
+
+                <p>
+                    Programming develops logical thinking and opens doors to
+                    exciting technology careers.
+                </p>
+
+                <div class="more-content">
+                    <p>
+                        Coding helps students improve problem-solving skills and
+                        learn how to build software solutions for real-world issues.
+                    </p>
+
+                    <p>
+                        Programming knowledge is valuable in fields such as
+                        artificial intelligence, cybersecurity, software engineering,
+                        and data science.
+                    </p>
+
+                    <p>
+                        Learning to code also encourages creativity and innovation,
+                        making it a highly valuable skill in today's digital world.
+                    </p>
+                </div>
+
+                <button class="read-more-btn">Read More</button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Insight Blog | Designed with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <!-- Read More Functionality -->
+    <script>
+        const buttons = document.querySelectorAll(".read-more-btn");
+
+        buttons.forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                const content = button.previousElementSibling;
+
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                    button.textContent = "Read More";
+                } else {
+                    content.style.display = "block";
+                    button.textContent = "Show Less";
+                }
+
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
