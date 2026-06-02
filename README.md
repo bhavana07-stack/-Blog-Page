@@ -87,4 +87,4 @@ The webpage displays:
 
 ## Author
 
-Developed as part of a Front-End Web Development assignment using HTML, CSS, and JavaScript.
+Bhavana
